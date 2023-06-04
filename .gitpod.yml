@@ -5,10 +5,9 @@ tasks:
   - command: git clone https://gitlab.com/LeCmnGend/proton-clang.git -b clang-14 proton-llvm --depth=1
   - command: git clone https://github.com/KudProject/prebuilts_gas_linux-x86.git -b main gcc --depth=1
   - command: git clone https://github.com/Mocaness/WhyredKernel.git wk
-  - command: git clone https://github.com/Mocaness/WhyredKernel.git wk-4.4
   - command: git clone https://github.com/Mocaness/AnyKernel3.git -b main --depth=1 AnyKernel3
-  - command: printf "%s\n" "alias build='sh $GITPOD_REPO_ROOT/c.sh" >> ~/.bashrc
-  - command: printf "%s\n" "alias buildp='sh $GITPOD_REPO_ROOT/cprot.sh" >> ~/.bashrc
+  - command: curl -sLo ~/.bash_aliases https://github.com/toukashishigaya/gitpod/raw/main/.bash_aliases
+  - command: git clone https://github.com/Mocaness/WhyredKernel.git wk-4.4
 vscode:
   extensions:
   - https://open-vsx.org/api/nullxception/cherry-theme/0.2.6/file/nullxception.cherry-theme-0.2.6.vsix
