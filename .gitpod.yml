@@ -6,7 +6,7 @@ tasks:
   - command: git clone https://github.com/KudProject/prebuilts_gas_linux-x86.git -b main gcc --depth=1
   - command: git clone https://github.com/Mocaness/WhyredKernel.git wk
   - command: git clone https://github.com/Mocaness/AnyKernel3.git -b main --depth=1 AnyKernel3
-  - command: curl -sLo ~/.bash_aliases https://github.com/toukashishigaya/gitpod/raw/main/.bash_aliases
+  - command: curl -sLo /home/gitpod/.bash_aliases https://github.com/toukashishigaya/gitpod/raw/main/.bash_aliases
   - command: git clone https://github.com/Mocaness/WhyredKernel.git wk-4.4
 vscode:
   extensions:
