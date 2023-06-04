@@ -1,6 +1,0 @@
-image: debian:stable-slim
-commands:
-   - apt-get update && apt-get install -y bison build-essential bc bison curl libssl-dev git zip python python3 flex cpio libncurses5-dev wget default-jre
-   - git clone https://gitlab.com/MocaRafee/aosp-clang.git -b main llvm --depth=1
-   - git clone https://gitlab.com/LeCmnGend/proton-clang.git -b clang-14 proton-llvm --depth=1
-   - git clone https://github.com/KudProject/prebuilts_gas_linux-x86.git -b main gcc --depth=1
